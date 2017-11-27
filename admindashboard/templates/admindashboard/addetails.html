@@ -1,0 +1,46 @@
+{% extends './base.html' %}
+
+{% block content %}
+    <div class="content-main">
+                        <div class="row margin-b-30">
+                            <div class="">
+                                <div class="banner-main-home">
+                                    <div class="">
+                                        <div class="heading">
+                                            <h1>Advertisement Details</h1>
+
+                                        </div>
+                                        <div class="desc">
+                                            <table>
+                                                <tr>
+                                                    <td>Ad ID: </td>
+                                                    <td>{{ ad.adId }}</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Category: </td>
+                                                    <td>{{ ad.category }}</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Ad Title: </td>
+                                                    <td>{{ ad.adTitle }}</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Description: </td>
+                                                    <td>{{ ad.adDescription }}</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Media Link: </td>
+                                                    <td>{{ ad.mediaLink }} <br><img src="{{ ad.mediaLink }}" alt="" /></td>
+                                                </tr>
+
+                                            </table>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                                          </div> <!-- .content-main -->
+                </div> <!-- .main-page -->
+            </div> <!-- .row -->
+{% endblock %}

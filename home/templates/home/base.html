@@ -1,0 +1,81 @@
+{% load staticfiles %}
+{% include "includes/header.html" %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <link rel='stylesheet' type='text/css' href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,400italic'>
+
+    <link rel="stylesheet" type="text/css" href="{% static 'font-awesome/css/font-awesome.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+
+    <title>AdFactory</title>
+</head>
+
+<body>
+    <div class="main-body">
+        <div class="container">
+            <div class="row">
+                <div class="main-page">
+
+                    <aside class="main-navigation">
+                        <div class="main-menu">
+
+                            <div class="menu-container">
+                                <div class="block-keep-ratio block-keep-ratio-2-1 block-width-full home">
+                                    <a href="/" class="block-keep-ratio__content  main-menu-link flexbox-center">
+
+                                            HOME
+
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="menu-container">
+                                <div class="block-keep-ratio  block-keep-ratio-1-1  block-width-half  pull-left  about-main">
+                                    <a href="/about/" class="main-menu-link about block-keep-ratio__content flexbox-center">
+
+                                        ABOUT
+                                    </a>
+                                </div>
+
+                                <div class="block-keep-ratio  block-keep-ratio-1-1  block-width-half  pull-right  contact-main">
+                                    <a href="/contact/" class="main-menu-link contact block-keep-ratio__content flexbox-center">
+
+                                        CONTACT
+                                    </a>
+                                </div>
+                                <div class="block-keep-ratio  block-keep-ratio-1-1  block-width-half  pull-left  contact-main menu-top-margin">
+                                    <a href="/login/" class="main-menu-link contact block-keep-ratio__content flexbox-center">
+
+                                        Sign-in
+                                    </a>
+                                </div>
+                            </div>
+
+                          </div>
+                        </div> <!-- main-menu -->
+                    </aside> <!-- main-navigation -->
+
+
+                {% block content %}
+
+                {% endblock %}
+
+
+                        <footer class="row">
+                <div class="">
+                    <p class="copyright">Copyright © 2016, AdFactory
+
+
+                </div>
+            </footer>  <!-- .row -->
+        </div> <!-- .container -->
+    </div> <!-- .main-body -->
+
+    <!-- JavaScript -->
+
+
+</body>
+</html>

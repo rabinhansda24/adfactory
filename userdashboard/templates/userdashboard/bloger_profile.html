@@ -1,0 +1,47 @@
+{% extends "./base.html" %}
+{% block content %}
+
+    <div class="content-main">
+                        <div class="row margin-b-30">
+                            <div class="">
+                                <div class="banner-main-home">
+                                    <div class="">
+                                        <div class="heading">
+                                            <h1>My Profile</h1>
+
+                                        </div>
+                                        <div class="desc">
+                                            <table style="width: 50%;height: inherit;padding: 8px">
+                                                <tr>
+                                                    <td><b>Name</b></td>
+                                                    <td>{{ user.name }}</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td><b>Email</b></td>
+                                                    <td>{{ user.userEmail }}</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><b>Address</b></td>
+                                                    <td>{{ user.address }}</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><b>Phone</b></td>
+                                                    <td>{{ user.phone }}</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><b>Account No.</b></td>
+                                                    <td>{{ user.accNo }} </td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                                          </div> <!-- .content-main -->
+                </div> <!-- .main-page -->
+            </div> <!-- .row -->
+
+{% endblock %}

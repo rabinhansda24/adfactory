@@ -1,0 +1,34 @@
+{% extends "./base.html" %}
+{% block content %}
+
+    <div class="content-main">
+                        <div class="row margin-b-30">
+                            <div class="">
+                                <div class="banner-main-home">
+                                    <div class="">
+                                        <div class="heading">
+                                            <h1>My Profile</h1>
+
+                                        </div>
+                                        <div class="desc">
+
+                                             <form action="post/" method="post" >
+
+                                                {% csrf_token %}
+
+                                                {{ blog.as_p }}
+                                                <button type="submit" >Add</button>
+                                            </form>
+
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                                          </div> <!-- .content-main -->
+                </div> <!-- .main-page -->
+            </div> <!-- .row -->
+
+{% endblock %}

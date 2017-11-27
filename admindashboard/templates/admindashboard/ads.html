@@ -1,0 +1,40 @@
+{% extends './base.html' %}
+
+{% block content %}
+    <div class="content-main">
+                        <div class="row margin-b-30">
+                            <div class="">
+                                <div class="banner-main-home">
+                                    <div class="">
+                                        <div class="heading">
+                                            <h1>View Blog</h1>
+
+                                        </div>
+                                        <div class="desc">
+                                            <table>
+                                                <tr style="background-color: #4CAF50; color: white;">
+                                                    <td style="padding-left: 20px; padding-right: 20px;">#</td>
+                                                    <td style="padding-left: 20px; padding-right: 20px; ">Advertisement</td>
+                                                </tr>
+
+                                                {% for ad in ads %}
+                                                    <tr>
+                                                        <td>{{ ad.adId }}</td>
+                                                        <td style="padding-left: 20px;">
+                                                            <a href="/admin-dashboard/ads/{{ ad.adId }}">{{ ad.adId }}</a>
+                                                        </td>
+
+                                                    </tr>
+
+                                                {% endfor %}
+                                            </table>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                                          </div> <!-- .content-main -->
+                </div> <!-- .main-page -->
+            </div> <!-- .row -->
+{% endblock %}

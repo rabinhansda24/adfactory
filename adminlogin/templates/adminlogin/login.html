@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    {% load staticfiles %}
+    <link rel="stylesheet" type="text/css" href="{% static 'login/style.css' %}">
+    <script src="{% static 'login/script.js' %}"></script>
+</head>
+<body>
+<div class="login-page">
+  <div class="form">
+      <h1>ADMIN</h1>
+    <form action="login/" method="post">
+          {% csrf_token %}
+
+          {{ form.as_p }}
+          <button type="submit">Submit</button>
+      </form>
+
+
+      <p class="message">Click <a href="/">Here</a> To Go Back</p>
+  </div>
+</div>
+</body>
+</html>
